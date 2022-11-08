@@ -1,0 +1,27 @@
+{
+  "name": "rmui-bigcomponents",
+  "version": "0.0.1",
+  "description": "A React big components library using Material UI",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpiazzal/rmui-bigcomponents.git"
+  },
+  "keywords": [
+    "react",
+    "react-components",
+    "mui",
+    "material-ui",
+    "components",
+    "bigcomponents"
+  ],
+  "author": {
+    "name": "Joël Piazzalunga-Lerat",
+    "email": "joel.piazzalungalerat@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jpiazzal/rmui-bigcomponents/issues"
+  },
+  "homepage": "https://github.com/jpiazzal/rmui-bigcomponents#readme"
+}
