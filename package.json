@@ -1,27 +1,37 @@
 {
-  "name": "rmui-bigcomponents",
-  "version": "0.0.1",
-  "description": "A React big components library using Material UI",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jpiazzal/rmui-bigcomponents.git"
-  },
-  "keywords": [
-    "react",
-    "react-components",
-    "mui",
-    "material-ui",
-    "components",
-    "bigcomponents"
-  ],
-  "author": {
-    "name": "Joël Piazzalunga-Lerat",
-    "email": "joel.piazzalungalerat@gmail.com"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jpiazzal/rmui-bigcomponents/issues"
-  },
-  "homepage": "https://github.com/jpiazzal/rmui-bigcomponents#readme"
+    "name": "rmui-bigcomponents",
+    "version": "0.0.1",
+    "description": "A React big components library using Material UI",
+    "keywords": [
+        "react",
+        "react-components",
+        "mui",
+        "material-ui",
+        "components",
+        "bigcomponents"
+    ],
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc"
+    },
+    "devDependencies": {
+        "@types/react": "^18.0.25",
+        "@types/react-dom": "^18.0.8",
+        "typescript": "^4.8.4"
+    },
+    "peerDependencies": {
+        "react": "18.x",
+        "react-dom": "18.x"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jpiazzal/rmui-bigcomponents.git"
+    },
+    "author": "Joël Piazzalunga-Lerat",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/jpiazzal/rmui-bigcomponents/issues"
+    },
+    "homepage": "https://github.com/jpiazzal/rmui-bigcomponents#readme"
 }
