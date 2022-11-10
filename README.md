@@ -15,13 +15,9 @@ npm install rmui-bigcomponents
 The approach is to create components that are easy to use, you just need to pass the props and the component will do the rest.
 
 ```jsx
-import { Footer } from "rmui-bigcomponents";
+import { Footer } from 'rmui-bigcomponents';
 
-<Footer
-  copyrightText="All rights reserved"
-  links={[
-    { text: "Terms of use", href: "/terms-of-use" },
-    { text: "Privacy policy", href: "/privacy-policy" },
-  ]}
-/>;
+function App() {
+    return <Footer copyrightText="All rights reserved" />;
+}
 ```
