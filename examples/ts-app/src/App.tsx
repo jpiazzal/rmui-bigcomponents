@@ -11,7 +11,21 @@ function App() {
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>RMUI Big Components - Ts App</p>
             </header>
-            <Footer copyrightText="All right reserved" />
+            <Footer
+                copyrightText="All right reserved"
+                socialMediaLinks={[
+                    { name: 'facebook', href: '#' },
+                    { name: 'twitter', href: '#' },
+                    { name: 'instagram', href: '#' },
+                    { name: 'youtube', href: '#' },
+                    { name: 'linkedin', href: '#' },
+                    { name: 'github', href: '#' },
+                    { name: 'pinterest', href: '#' },
+                    { name: 'reddit', href: '#' },
+                    { name: 'whatsapp', href: '#' },
+                    { name: 'telegram', href: '#' }
+                ]}
+            />
         </div>
     );
 }
