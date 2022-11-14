@@ -67,9 +67,9 @@ module.exports = {
             'error',
             {
                 replacements: {
-                    props: {
-                        properties: false
-                    }
+                    props: false,
+                    i: false,
+                    str: false
                 }
             }
         ]
