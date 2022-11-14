@@ -3,9 +3,10 @@
     "private": true,
     "scripts": {
         "prepare": "husky install",
-        "lint": "eslint packages/*"
+        "lint": "eslint packages/* examples/*"
     },
     "workspaces": [
+        "examples/*",
         "packages/*"
     ],
     "devDependencies": {
