@@ -1,0 +1,35 @@
+{
+    "name": "ts-app",
+    "version": "1.0.0",
+    "description": "Ts react application using rmui-bigcomponents",
+    "scripts": {
+        "start": "react-scripts start"
+    },
+    "dependencies": {
+        "@emotion/react": "^11.10.5",
+        "@emotion/styled": "^11.10.5",
+        "@mui/material": "^5.10.13",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "rmui-bigcomponents": "*"
+    },
+    "devDependencies": {
+        "@types/react": "^18.0.25",
+        "@types/react-dom": "^18.0.8",
+        "react-scripts": "^5.0.1",
+        "typescript": "^4.8.4"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "license": "MIT"
+}
