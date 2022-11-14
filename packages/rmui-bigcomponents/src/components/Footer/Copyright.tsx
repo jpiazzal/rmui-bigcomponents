@@ -6,5 +6,7 @@ interface CopyrightProps {
 }
 
 export default function Copyright({ text, align = 'center' }: CopyrightProps) {
-    return <Typography align={align} variant="body2">{`© ${new Date().getFullYear()} ${text}`}</Typography>;
+    return (
+        <Typography align={align} sx={{ py: 1 }} variant="body2">{`© ${new Date().getFullYear()} ${text}`}</Typography>
+    );
 }
