@@ -14,5 +14,6 @@
     "allowSyntheticDefaultImports": true,
     "noUnusedLocals": true,
     "forceConsistentCasingInFileNames": true,
+    "baseUrl": "src",
   }
 }
