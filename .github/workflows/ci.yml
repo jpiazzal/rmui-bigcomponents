@@ -4,14 +4,16 @@ on: [push, pull_request]
 
 jobs:
     CI:
-        name: Lint on ${{ matrix.os }}
+        name: Lint and Tests on ${{ matrix.os }}
         runs-on: ${{ matrix.os }}
         strategy:
             matrix:
                 os: [ubuntu-latest, macos-latest]
         steps:
             - uses: actions/checkout@v3
-            - name: npm install
+            - name: install dependencies
               run: npm ci
-            - name: npm run lint
+            - name: run linter
               run: npm run lint
+            - name: run tests
+              run: npm test -w rmui-bigcomponents
