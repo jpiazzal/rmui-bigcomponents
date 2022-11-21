@@ -1,0 +1,68 @@
+/**
+ * TITLES
+ */
+
+.sbdocs .sbdocs-h1, .sbdocs .sbdocs-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.sbdocs .sbdocs-h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.sbdocs .sbdocs-h3 {
+  font-size: 1.25em;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.sbdocs .sbdocs-h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.sbdocs .sbdocs-h5 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.sbdocs .sbdocs-h6 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/**
+ * HTML ELEMENTS
+ */
+
+.sbdocs .sbdocs-p {
+    font-size: 1rem;
+}
+
+.sbdocs .sbdocs-li {
+    font-size: 1rem;
+}
+
+/**
+ * TABLES
+ */
+
+.docblock-argstable .docblock-argstable-head {
+    font-size: 1rem;
+}
+
+/**
+ * CUSTOM
+ */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

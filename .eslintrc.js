@@ -1,6 +1,6 @@
 module.exports = {
     parser: '@typescript-eslint/parser',
-    ignorePatterns: ['node_modules', 'dist', '*.d.ts', 'coverage', 'jest.config.js'],
+    ignorePatterns: ['node_modules', 'dist', '*.d.ts', 'coverage', 'jest.config.js', 'storybook-static'],
     extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/eslint-recommended',
@@ -69,7 +69,8 @@ module.exports = {
                 replacements: {
                     props: false,
                     i: false,
-                    str: false
+                    str: false,
+                    args: false
                 }
             }
         ]

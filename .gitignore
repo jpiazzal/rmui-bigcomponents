@@ -30,3 +30,6 @@ Thumbs.db
 
 # Ignore built ts files
 dist
+
+# storybook
+storybook-static

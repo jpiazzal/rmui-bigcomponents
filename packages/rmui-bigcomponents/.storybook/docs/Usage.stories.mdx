@@ -1,0 +1,36 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="Docs/Usage" />
+
+# Usage
+
+Basics usage of RMUI Big Components and some examples projects.
+
+## Quick start
+
+To display a simple footer like this:
+
+<img src="/images/footer_example.png" alt="Footer example" class="center" />
+
+You have to do this:
+
+```jsx
+import { Footer } from 'rmui-bigcomponents';
+
+function App() {
+    return (
+        <Footer
+            copyrightText="My Website. All right reserved"
+            socialMediaLinks={[
+                { name: 'facebook', href: '#' },
+                { name: 'twitter', href: '#' },
+                { name: 'instagram', href: '#' }
+            ]}
+        />
+    );
+}
+```
+
+## Example projects
+
+You can see the example projects in the [GitHub repository](https://github.com/jpiazzal/rmui-bigcomponents/tree/main/examples)
