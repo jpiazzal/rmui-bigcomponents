@@ -15,5 +15,7 @@
     "noUnusedLocals": true,
     "forceConsistentCasingInFileNames": true,
     "baseUrl": "src",
-  }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["__tests__", "**/*.test.ts", "**/*.test.tsx", "**/*.stories.tsx"],
 }
