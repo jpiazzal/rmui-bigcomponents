@@ -17,8 +17,8 @@ export const DefaultFooter = Template.bind({});
 DefaultFooter.args = {
     copyrightText: 'Website. All right reserved',
     socialMediaLinks: [
-        { name: 'facebook', href: '#' },
-        { name: 'twitter', href: '#' },
-        { name: 'instagram', href: '#' }
+        { name: 'facebook', url: '#' },
+        { name: 'twitter', url: '#' },
+        { name: 'instagram', url: '#' }
     ]
 };

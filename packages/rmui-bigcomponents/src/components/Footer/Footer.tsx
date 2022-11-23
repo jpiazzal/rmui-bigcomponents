@@ -1,13 +1,24 @@
+import SocialMedia from 'types/SocialMedia';
+
 import Copyright from './Copyright';
 import SocialMediaLinks from './SocialMediaLinks';
 
 interface FooterProps {
-    socialMediaLinks?: Array<{ name: string; href: string; title?: string }>;
+    /**
+     * *Optional*
+     *
+     * The social media links to display as icons.
+     */
+    socialMediaLinks?: SocialMedia[];
+    /**
+     * *Optional*
+     *
+     * Text displayed in the copyright section. It always start with "©" and the current year.
+     */
     copyrightText?: string;
 }
 
-export default function Footer(props: FooterProps) {
-    const { socialMediaLinks, copyrightText } = props;
+export default function Footer({ socialMediaLinks, copyrightText }: FooterProps) {
     return (
         <footer style={{ padding: '1rem' }} role="contentinfo">
             {socialMediaLinks && <SocialMediaLinks socialMedias={socialMediaLinks} />}

@@ -10,43 +10,65 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import SvgIcon from '@mui/material/SvgIcon';
+import SocialMedia from 'types/SocialMedia';
+
+export const SUPPORTED_SOCIAL_MEDIAS: { [key: string]: SocialMedia } = {
+    facebook: {
+        name: 'Facebook',
+        url: 'https://www.facebook.com/',
+        icon: FacebookIcon
+    },
+    github: {
+        name: 'GitHub',
+        url: 'https://github.com/',
+        icon: GitHubIcon
+    },
+    instagram: {
+        name: 'Instagram',
+        url: 'https://www.instagram.com/',
+        icon: InstagramIcon
+    },
+    linkedin: {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/',
+        icon: LinkedInIcon
+    },
+    pinterest: {
+        name: 'Pinterest',
+        url: 'https://www.pinterest.com/',
+        icon: PinterestIcon
+    },
+    reddit: {
+        name: 'Reddit',
+        url: 'https://www.reddit.com/',
+        icon: RedditIcon
+    },
+    telegram: {
+        name: 'Telegram',
+        url: 'https://telegram.org/',
+        icon: TelegramIcon
+    },
+    twitter: {
+        name: 'Twitter',
+        url: 'https://twitter.com/',
+        icon: TwitterIcon
+    },
+    whatsapp: {
+        name: 'WhatsApp',
+        url: 'https://www.whatsapp.com/',
+        icon: WhatsAppIcon
+    },
+    youtube: {
+        name: 'YouTube',
+        url: 'https://www.youtube.com/',
+        icon: YouTubeIcon
+    }
+};
 
 export function getSocialMediaIcon(name: string): typeof SvgIcon {
     name = name.toLowerCase();
-
-    switch (name) {
-        case 'facebook': {
-            return FacebookIcon;
-        }
-        case 'twitter': {
-            return TwitterIcon;
-        }
-        case 'instagram': {
-            return InstagramIcon;
-        }
-        case 'linkedin': {
-            return LinkedInIcon;
-        }
-        case 'youtube': {
-            return YouTubeIcon;
-        }
-        case 'pinterest': {
-            return PinterestIcon;
-        }
-        case 'reddit': {
-            return RedditIcon;
-        }
-        case 'telegram': {
-            return TelegramIcon;
-        }
-        case 'whatsapp': {
-            return WhatsAppIcon;
-        }
-        case 'github': {
-            return GitHubIcon;
-        }
-        default: {
-            return LinkIcon;
-        }
+    if (SUPPORTED_SOCIAL_MEDIAS[name]) {
+        return SUPPORTED_SOCIAL_MEDIAS[name].icon || LinkIcon;
     }
+    return LinkIcon;
 }
