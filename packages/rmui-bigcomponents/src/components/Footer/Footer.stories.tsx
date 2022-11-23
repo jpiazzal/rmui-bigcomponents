@@ -1,15 +1,14 @@
-import { ArgsTable } from '@storybook/addon-docs';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+import React from 'react';
 
 import Footer from './Footer';
 
 export default {
     component: Footer,
     title: 'Big Components/Footer'
-};
+} as ComponentMeta<typeof Footer>;
 
-<ArgsTable of={Footer} />;
-
-const Template = (args: any) => <Footer {...args} />;
+const Template: ComponentStory<typeof Footer> = (args: any) => <Footer {...args} />;
 
 /**
  * Default Footer

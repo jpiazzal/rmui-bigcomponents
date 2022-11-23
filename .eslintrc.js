@@ -17,6 +17,7 @@ module.exports = {
         // OFF
         'eslint-comments/no-unused-disable': 'off',
         'filenames/match-regex': 'off',
+        'import/named': 'off', // doesn't work well
         'import/no-unresolved': 'off',
         'unicorn/no-null': 'off',
         // ERRORS

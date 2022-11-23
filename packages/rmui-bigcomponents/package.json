@@ -21,7 +21,7 @@
         "test": "jest",
         "build": "rollup -c",
         "build:watch": "rollup -c -w",
-        "storybook": "start-storybook --docs --no-manager-cache -p 6006",
+        "storybook": "start-storybook --docs -p 6006",
         "build:storybook": "build-storybook --docs"
     },
     "devDependencies": {
