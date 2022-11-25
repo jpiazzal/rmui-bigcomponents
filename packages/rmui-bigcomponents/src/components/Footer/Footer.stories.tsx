@@ -17,7 +17,12 @@ export default {
                 component: dedent`
                     The footer component is used to display a footer at the bottom of the page.
 
-                    It is composed of a copyright section and a social media section.
+                    It is composed of 3 sections:
+                    - Sub links
+                    - Social media links
+                    - Copyright
+
+                    All sections are optional. If you don't want to display a section, just don't pass the corresponding prop.
 
                     ### Usage
 
@@ -27,7 +32,7 @@ export default {
 
                     ~~~
 
-                    All sections are optional. If you don't want to display a section, just don't pass the corresponding props.
+                    On each preview, a button \`Show code\` is available to display the code of the component.
 
                     ### Types
 
