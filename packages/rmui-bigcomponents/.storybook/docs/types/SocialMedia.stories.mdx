@@ -1,0 +1,74 @@
+import { Meta, Source } from '@storybook/addon-docs';
+
+import dedent from 'ts-dedent';
+
+<Meta title="Types/SocialMedia" />
+
+## 🔍 SocialMedia Type
+
+### Types properties
+
+| Name  | Type    | Default  | Optional | Description                                                                                                                                                                                                                                                             |
+| :---- | :------ | :------- | :------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name  | string  |          | NO       | The name of the social media.                                                                                                                                                                                                                                           |
+| url   | string  |          | NO       | The url to social media.                                                                                                                                                                                                                                                |
+| title | string  | name     | YES      | Title attribute of the link, useful for accessibility and SEO.<br />_Default_ is the property name starting with an uppercase.<br />💡 See [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title) for more information.                      |
+| icon  | SvgIcon | LinkIcon | YES      | The icon to display. If social media is not supported, the icon will be a [Link icon](https://mui.com/material-ui/material-icons/?query=link&selected=Link).<br />💡 See how to create a custom SVG icon with [Material UI](https://mui.com/material-ui/icons/#svgicon) |
+
+### Supported social media
+
+Social medial names with an icon are the following ones (case insensitive):
+
+`twitter` `facebook` `instagram` `linkedin` `youtube` `github` `pinterest` `reddit` `telegram` `whatsapp`
+
+⚠ If the name is not one of this, the icon will be a [Link icon](https://mui.com/material-ui/material-icons/?query=link&selected=Link), you can use your own icon with the `icon` prop.
+
+### Examples
+
+#### Supported social media
+
+It will display a YouTube icon and title will be `YouTube`
+
+<Source
+    language="js"
+    dark
+    code={dedent`
+        const mySocialMedia = {
+            name: 'youtube',
+            url: 'https://youtube.com/your-page'
+        };
+    `}
+/>
+
+#### Custom social media with default icon and title
+
+It will display a [Link icon](https://mui.com/material-ui/material-icons/?query=link&selected=Link) and title will be `My social media`
+
+<Source
+    language="js"
+    dark
+    code={dedent`
+        const mySocialMedia = {
+            name: 'my social media',
+            url: 'https://custom.com/your-page'
+        };
+    `}
+/>
+
+#### Custom social media with icon and title
+
+It will display your CustomSvgIcon and title will be `Link to my social media page`
+
+<Source
+    language="js"
+    dark
+    code={dedent`
+        import { CustomSvgIcon } from 'path/to/CustomSvgIcon';
+        const customSocialMedia = {
+            name: 'my social media',
+            url: 'https://my-social-media.com/your-page',
+            title: 'Link to my social media page',
+            icon: CustomSvgIcon
+        };
+    `}
+/>

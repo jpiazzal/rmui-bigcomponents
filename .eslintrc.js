@@ -18,6 +18,7 @@ module.exports = {
         'eslint-comments/no-unused-disable': 'off',
         'filenames/match-regex': 'off',
         'import/named': 'off', // doesn't work well
+        'import/no-named-as-default': 'off', // doesn't work well
         'import/no-unresolved': 'off',
         'unicorn/no-null': 'off',
         // ERRORS
@@ -73,6 +74,12 @@ module.exports = {
                     str: false,
                     args: false
                 }
+            }
+        ],
+        'unicorn/template-indent': [
+            'error',
+            {
+                indent: 4
             }
         ]
     }
