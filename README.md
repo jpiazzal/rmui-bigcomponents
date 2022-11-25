@@ -22,9 +22,9 @@ function App() {
         <Footer
             copyrightText="My Website. All right reserved"
             socialMediaLinks={[
-                { name: 'facebook', href: '#' },
-                { name: 'twitter', href: '#' },
-                { name: 'instagram', href: '#' }
+                { name: 'facebook', url: '#' },
+                { name: 'twitter', url: '#' },
+                { name: 'instagram', url: '#' }
             ]}
         />
     );
