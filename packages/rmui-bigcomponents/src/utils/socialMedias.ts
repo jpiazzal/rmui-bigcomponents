@@ -11,6 +11,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import SvgIcon from '@mui/material/SvgIcon';
 import SocialMedia from 'types/SocialMedia';
+import { capitalize } from 'utils/string';
 
 export const SUPPORTED_SOCIAL_MEDIAS: { [key: string]: SocialMedia } = {
     facebook: {
@@ -71,4 +72,12 @@ export function getSocialMediaIcon(name: string): typeof SvgIcon {
         return SUPPORTED_SOCIAL_MEDIAS[name].icon || LinkIcon;
     }
     return LinkIcon;
+}
+
+export function getSocialMediaTitle(name: string): string {
+    name = name.toLowerCase();
+    if (SUPPORTED_SOCIAL_MEDIAS[name]) {
+        return SUPPORTED_SOCIAL_MEDIAS[name].name;
+    }
+    return capitalize(name);
 }

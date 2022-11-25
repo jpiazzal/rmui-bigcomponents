@@ -1,8 +1,7 @@
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import SocialMedia from 'types/SocialMedia';
-import { getSocialMediaIcon } from 'utils/socialMedias';
-import { capitalize } from 'utils/string';
+import { getSocialMediaIcon, getSocialMediaTitle } from 'utils/socialMedias';
 
 interface SocialMediaLinksProps {
     socialMedias: SocialMedia[];
@@ -23,8 +22,9 @@ export default function SocialMediaLinks({ socialMedias, align = 'center' }: Soc
         >
             {socialMedias.map((socialMedia, i) => {
                 const Icon = socialMedia.icon || getSocialMediaIcon(socialMedia.name);
+                const title: string = socialMedia.title || getSocialMediaTitle(socialMedia.name);
                 return (
-                    <Link href={socialMedia.url} title={capitalize(socialMedia.title || socialMedia.name)} key={i}>
+                    <Link href={socialMedia.url} title={title} key={i}>
                         <Icon sx={{ fontSize: '1.75rem' }} />
                     </Link>
                 );
