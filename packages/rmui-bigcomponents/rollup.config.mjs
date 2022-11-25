@@ -27,6 +27,12 @@ export default [
     {
         input: 'dist/esm/index.d.ts',
         output: [{ file: packageJson.types, format: 'esm' }],
-        plugins: [dts()]
+        plugins: [
+            dts({
+                compilerOptions: {
+                    baseUrl: './src'
+                }
+            })
+        ]
     }
 ];
