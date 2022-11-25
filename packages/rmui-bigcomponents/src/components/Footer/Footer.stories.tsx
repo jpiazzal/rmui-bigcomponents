@@ -47,6 +47,12 @@ const copyrightText = 'Website. All rights reserved.';
  */
 export const Default = Template.bind({});
 Default.args = {
+    subLinks: [
+        { name: 'Contact Us', url: '#' },
+        { name: 'About Us', url: '#' },
+        { name: 'Privacy Policy', url: '#' },
+        { name: 'Terms of Use', url: '#' }
+    ],
     socialMediaLinks: [
         { name: 'facebook', url: '#' },
         { name: 'twitter', url: '#' },
