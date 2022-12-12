@@ -12,7 +12,15 @@ module.exports = {
     typescript: {
         check: true // type-check stories during Storybook build
     },
-    addons: ['@storybook/addon-docs'],
+    addons: [
+        '@storybook/addon-docs',
+        {
+            name: '@ts2doc/storybook-addon',
+            options: {
+                patternDocType: 'src/types/**/*.ts'
+            }
+        }
+    ],
     framework: '@storybook/react',
     staticDirs: ['./assets'],
     webpackFinal: async (config) => {

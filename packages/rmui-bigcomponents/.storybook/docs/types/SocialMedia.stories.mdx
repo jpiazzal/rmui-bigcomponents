@@ -1,19 +1,13 @@
 import { Meta, Source } from '@storybook/addon-docs';
 
+import { InterfaceDoc } from '@ts2doc/components';
+import doc from '.cache/ts2doc/doc.json';
+
 import dedent from 'ts-dedent';
 
 <Meta title="Types/SocialMedia" />
 
-## 🔍 SocialMedia Type
-
-### Types properties
-
-| Name  | Type    | Default  | Optional | Description                                                                                                                                                                                                                                                             |
-| :---- | :------ | :------- | :------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name  | string  |          | NO       | The name of the social media.                                                                                                                                                                                                                                           |
-| url   | string  |          | NO       | The url to social media.                                                                                                                                                                                                                                                |
-| title | string  | name     | YES      | Title attribute of the link, useful for accessibility and SEO.<br />_Default_ is the property name starting with an uppercase.<br />💡 See [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title) for more information.                      |
-| icon  | SvgIcon | LinkIcon | YES      | The icon to display. If social media is not supported, the icon will be a [Link icon](https://mui.com/material-ui/material-icons/?query=link&selected=Link).<br />💡 See how to create a custom SVG icon with [Material UI](https://mui.com/material-ui/icons/#svgicon) |
+<InterfaceDoc doc={doc.SocialMedia} />
 
 ### Supported social media
 
