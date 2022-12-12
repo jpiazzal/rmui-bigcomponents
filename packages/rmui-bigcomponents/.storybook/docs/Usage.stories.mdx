@@ -1,4 +1,5 @@
-import { Meta } from '@storybook/addon-docs';
+import { Meta, Source } from '@storybook/addon-docs';
+import dedent from 'ts-dedent';
 
 <Meta title="Docs/Usage" />
 
@@ -14,22 +15,31 @@ To display a simple footer like this:
 
 You have to do this:
 
-```jsx
-import { Footer } from 'rmui-bigcomponents';
-
-function App() {
-    return (
-        <Footer
-            copyrightText="My Website. All right reserved"
-            socialMediaLinks={[
-                { name: 'facebook', url: '#' },
-                { name: 'twitter', url: '#' },
-                { name: 'instagram', url: '#' }
-            ]}
-        />
-    );
-}
-```
+<Source
+    language="js"
+    dark
+    code={dedent`
+        import { Footer } from 'rmui-bigcomponents';
+        function App() {
+            return (
+                <Footer
+                    copyrightText="Website. All rights reserved."
+                    socialMediaLinks={[
+                        { name: 'facebook', url: '#' },
+                        { name: 'twitter', url: '#' },
+                        { name: 'instagram', url: '#' }
+                    ]}
+                    subLinks={[
+                        { name: 'Contact Us', url: '#' },
+                        { name: 'About Us', url: '#' },
+                        { name: 'Privacy Policy', url: '#' },
+                        { name: 'Terms of Use', url: '#' }
+                    ]}
+                />
+            );
+        }
+    `}
+/>
 
 ## Example projects
 

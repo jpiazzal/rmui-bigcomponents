@@ -1,4 +1,5 @@
-import { Meta } from '@storybook/addon-docs';
+import { Meta, Source } from '@storybook/addon-docs';
+import dedent from 'ts-dedent';
 
 <Meta title="Docs/Installation" />
 
@@ -10,15 +11,11 @@ Install RMUI Big Components
 
 ### npm
 
-```bash
-npm install rmui-bigcomponents
-```
+<Source language="shell" dark code={dedent`npm install rmui-bigcomponents`} />
 
 ### yarn
 
-```bash
-yarn add rmui-bigcomponents
-```
+<Source language="shell" dark code={dedent`yarn add rmui-bigcomponents`} />
 
 **Be sure to install all the peer dependencies bellow, there are required for the library to work properly.**
 
@@ -33,14 +30,18 @@ yarn add rmui-bigcomponents
 
 ### npm
 
-```bash
-npm install react@18.x react-dom@18.x @mui/material@5.x @emotion/styled@11.x @emotion/react@11.x @mui/icons-material@11.x
-```
+<Source
+    language="shell"
+    dark
+    code={dedent`npm install react@18.x react-dom@18.x @mui/material@5.x @emotion/styled@11.x @emotion/react@11.x @mui/icons-material@11.x`}
+/>
 
 ### yarn
 
-```bash
-yarn add react@18.x react-dom@18.x @mui/material@5.x @emotion/styled@11.x @emotion/react@11.x @mui/icons-material@11.x
-```
+<Source
+    language="shell"
+    dark
+    code={dedent`yarn add react@18.x react-dom@18.x @mui/material@5.x @emotion/styled@11.x @emotion/react@11.x @mui/icons-material@11.x`}
+/>
 
 You are now able to use rmui-bigcomponents in your project!

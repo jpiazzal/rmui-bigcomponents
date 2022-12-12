@@ -20,11 +20,17 @@ import { Footer } from 'rmui-bigcomponents';
 function App() {
     return (
         <Footer
-            copyrightText="My Website. All right reserved"
+            copyrightText="Website. All rights reserved."
             socialMediaLinks={[
                 { name: 'facebook', url: '#' },
                 { name: 'twitter', url: '#' },
                 { name: 'instagram', url: '#' }
+            ]}
+            subLinks={[
+                { name: 'Contact Us', url: '#' },
+                { name: 'About Us', url: '#' },
+                { name: 'Privacy Policy', url: '#' },
+                { name: 'Terms of Use', url: '#' }
             ]}
         />
     );
