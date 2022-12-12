@@ -1,4 +1,4 @@
-# RMUI Big Components [WIP]
+# RMUI Big Components
 
 A React big components library using Material UI.
 
